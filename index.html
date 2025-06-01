@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CRUD App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-3xl mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Task Manager</h1>
+        
+        <form id="taskForm" class="mb-8">
+            <div class="flex gap-4">
+                <input type="text" id="taskInput" 
+                    class="flex-1 px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    placeholder="Enter your task..." required>
+                <button type="submit" 
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-2">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+        </form>
+
+        <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Your Tasks</h2>
+            </div>
+            <ul id="taskList" class="space-y-3"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
